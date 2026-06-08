@@ -33,23 +33,22 @@ if(isset($_POST['calculate'])){
 
 <div class="container mt-4">
 
+    <?php include 'nav.php'; ?>
+
     <div class="card shadow">
 
         <div class="card-header bg-primary text-white">
             <h3 class="mb-0">🍰 Recipe Calculator</h3>
+            <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#addModal">
+            + Add Ingredient
+        </button>
         </div>
 
         <div class="card-body">
 
-            <div class="mb-3">
-                <a href="category.php" class="btn btn-secondary">
-                    Categories
-                </a>
-
-                <a href="recipe.php" class="btn btn-success">
-                    Recipes
-                </a>
-            </div>
+           
 
             <form method="post">
 

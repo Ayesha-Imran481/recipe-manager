@@ -74,27 +74,15 @@ if(isset($_GET['delete'])){
 <body>
 
 <div class="container mt-4">
-
+    <?php include 'nav.php'; ?>
     <div class="d-flex justify-content-between mb-3">
-
-        <div>
-            <h3>🥣 Ingredients</h3>
-            <strong>Recipe:</strong>
-            <?php echo $recipe['name']; ?>
-        </div>
-
-        <div>
-            <a href="recipe.php" class="btn btn-secondary">
-                ← Back
-            </a>
-
-            <button class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#addModal">
-                ➕ Add Ingredient
-            </button>
-        </div>
-
+        <h3>🍰 Ingredients for <?php echo $recipe['name']; ?> </h3>
+        <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#addModal">
+            + Add Ingredient
+        </button>
+       
     </div>
 
     <table class="table table-bordered table-striped">

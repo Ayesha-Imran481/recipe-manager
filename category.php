@@ -43,17 +43,15 @@ if(isset($_GET['delete'])){
 
 <div class="container mt-4">
 
-    <div class="d-flex justify-content-between mb-3">
-        <h3> Bakery Categories</h3>
-
-        <button class="btn btn-danger"
+    <?php include 'nav.php'; ?>
+    <div class="card-header bg-primary text-white">
+        <h3 class="mb-0" style="padding:10px;"> 🍰 All Categories 
+             <button class="btn btn-secondary" style="float:right;"
                 data-bs-toggle="modal"
                 data-bs-target="#addModal">
-            ➕ Add Category
+            + Add Category
         </button>
-		<a href="index.php" class="btn btn-secondary">
-			Back to Home
-        </a>
+        </h3>
     </div>
 
     <table class="table table-bordered table-striped">
